@@ -3,6 +3,7 @@
 
 import numpy as np
 
+SEED = 42
 ALPHABET = ['A', 'C', 'T', 'G']
 PHRED_MIN = 33
 PHRED_MAX = 63
@@ -21,6 +22,8 @@ def iter_fastq(n=100, l=100):
         yield (header, seq, qual)
 
 def main():
+    np.random.seed(SEED)
+
     with open("test.fa", "w+") as f:
         for h, s in iter_fasta():
             f.write(f">{h}\n{s}\n")
