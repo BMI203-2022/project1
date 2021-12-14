@@ -2,7 +2,7 @@
 Building a FAST[AQ] Parser + Building a DNA -> RNA Transcriber
 
 # Assignment Overview
-The purpose of this assignment is to bring everybody up to speed on using python and highlight some of the elements of the language and of OOP that will be ~inherited~ by downstream course content. We also hope to use this as an opportunity to learn some of the useful tools within github for software development that will be useful to you in your research experiences down the road. 
+The purpose of this assignment is to bring everybody up to speed on using python and highlight some of the elements of the language and of OOP that will be _inherited_ by downstream course content. We also hope to use this as an opportunity to learn some of the useful tools within github for software development that will be useful to you in your research experiences down the road. 
 
 The learning goals of this project are:
 	1. object oriented programming
