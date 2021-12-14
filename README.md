@@ -59,7 +59,7 @@ ACGGACCGGATTAACCATGAA
 ```
 
 ## FASTQ File Format
-The FASTQ file format is very similar to the FASTA records, but it includes 2 extra lines per record. The only added information is the quality score, which will look like a novel on a computer's stream of consciousness but rest assured that is in fact the confidence that a sequencing machine has on calling a base the base that it is. If you are interested in that process, take a look at PHRED scoring, if you are not that is ok too. If you think that the plus sign is a waste of space, I agree with you whole heartedly: the FASTQ system is the worst system for representing sequencing data except for all the other ones.
+The FASTQ file format is very similar to the FASTA records, but it includes 2 extra lines per record. The only added information is the quality score, which will look like a computer's stream of consciousness but is in fact the confidence that a base is the base called. If you are interested in that process, take a look at PHRED scoring, if you are not that is ok too
 
 ### FASTQ Representation
 ```
@@ -104,8 +104,12 @@ output : U G U C U U G G G
 ```
 
 # Github Actions
-These are really useful tools for software development and are a good way to test if you are adding breaking changes to a code base. They are a must for open source projects, but even in my own moonshine-esque bioinformatic exploits they have proven invaluable. The idea behind them is that you can set up github to do something when you do something. If that sounds vague please know that it is merely abstracted; and for good reason! You can set these up to do quite a bit of things and test quite a bit of things in response to multiple conditions being met (i.e. merging branches, publishing packages, alerting failures, etc.). You can get into the weeds with metaprogramming and DevOps nightmares with this, but knowing a little can be really useful in distributing your code to other lab members or collaborators and is something that is useful to learn. 
+These are really useful tools for software development and are a good way to test if you are adding breaking changes to a code base. They are a must for open source projects, but even in my own moonshine-esque bioinformatic exploits they have proven invaluable. 
+
+The idea behind them is that you can set up github to do something when you do something. If that sounds vague please know that it is merely abstracted; and for good reason! You can set these up to do quite a bit of things and test quite a bit of things in response to multiple conditions being met (i.e. merging branches, publishing packages, alerting failures, etc.). You can get into the weeds with metaprogramming and DevOps nightmares with this, but knowing a little can be really useful in distributing your code to other lab members or collaborators and is something that is useful to learn. 
+
 For the purposes of this assignment we are interested in responding to git `push` commands. We will be writing a github action that will test the installation of our package and then run our unit tests to make sure they pass.
+
 Github already offers some boilerplate actions that can be found under the `Actions` tab on the webpage of your repo. It'll recognize the `*.py` files in the repository and offer you some python related options. There isn't one prebuilt for what we're asking for the assignment, but either of the 4 options provided as defaults could be easily modified to run the installation and the tests - but the PyLint one is the most similar.
 
 You will need to run the following commands in your `YAML` file, but the implementation details are up to you
