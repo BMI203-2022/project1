@@ -13,25 +13,25 @@ The learning goals of this project are:
 # Assignment Tasks
 
 ## Coding Assessment
-[] Write a Fasta Parser
-[] Write a Fastq Parser
-[] Write a Transcription Function
-[] Write a Reverse Transcription Function
+* Write a Fasta Parser
+* Write a Fastq Parser
+* Write a Transcription Function
+* Write a Reverse Transcription Function
 
 ## Software Development Assessment
-[] Create a pip installable tool (only locally, do not submit to PyPI)
-	[] Edit the `pyproject.toml` file to reflect author information
-	[] Update the dependencies
+* Create a pip installable tool (only locally, do not submit to PyPI)
+	* Edit the `pyproject.toml` file to reflect author information
+	* Update the dependencies
 
-[] Write a unit test for
-	[] Fasta Parser
-	[] Fastq Parser
-	[] Transcription
-	[] Reverse Transcription
+* Write a unit test for
+	* Fasta Parser
+	* Fastq Parser
+	* Transcription
+	* Reverse Transcription
 
-[] Automate Testing with a Github Action
-	[] pip installs tool
-	[] runs pytest
+* Automate Testing with a Github Action
+	* pip installs tool
+	* runs pytest
 
 # Reference Information
 ## Test Data
