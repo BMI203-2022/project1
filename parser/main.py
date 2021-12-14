@@ -1,7 +1,7 @@
 from parse import FastaParser
 from parse import FastqParser
 from seq import transcribe
-from seq import reverse_transcribe 
+from seq import reverse_transcribe
 
 def main():
     pass
