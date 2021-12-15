@@ -148,7 +148,7 @@ setup(
 )
 ```
 
-## `pyproject.yaml`
+## `pyproject.toml`
 you can read more about creating packages easily with [flit](https://flit.readthedocs.io/en/latest/index.html)
 
 here is an example `pyproject.toml`
