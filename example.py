@@ -1,4 +1,4 @@
-from parser import (
+from seqparser import (
         FastaParser,
         FastqParser,
         transcribe,
@@ -8,7 +8,6 @@ def main():
     """
     The main function
     """
-    
     # Create instance of FastaParser
     # Create instance of FastqParser
         
