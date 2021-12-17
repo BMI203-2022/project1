@@ -8,18 +8,40 @@ class Parser:
     """
     def __init__(self, filename: str):
         """
-        Initialization to be shared by inherited classes
+        Initialization to be shared by all inherited classes
+        
+        # What does the `__init__` method do?
+            This method will be called immediately upon creating an object. It's a useful
+            way to assign baseline attributes of the class (in this case making the filename
+            accessible by all methods) but also to run preliminary code or assertions (like 
+            checking to see if the file exists at all!)
+           
+        # Should I ever call the `__init__` method? 
+            Like most hidden methods (the double underscored names) this is not generally something
+            you call from the outside of a class. However, if you need to specificy a different
+            `__init__` method for a subclass you will need to call this with the `Super` keyword. We
+            won't get into this now, but if you are interested feel free to reach out to the TAs or
+            check out the documentation on the `Super` keyword. 
         """
         self.filename = filename
 
     def get_record(self, f_obj: io.TextIOWrapper) -> Union[Tuple[str, str], Tuple[str, str, str]]:
         """
-        a method that returns a tuple of strings.
-        Will either return a tuple of two strings
-        or a tuple of three strings
+        Returns a sequencing record that will either be a tuple of two strings (header, sequence)
+        or a tuple of three strings (header, sequence, quality). 
 
-        it is common in python to see a public method calling a private method
-        with a similar name. 
+        # What's the deal with calling a method by almost the same name?
+            it is common in python to see a public method calling a hidden method
+            with a similar name. Both of these are accessible to a user (nothing is truly hidden in python)
+            but it is a useful way to separate out Class and SubClass specific behavior. 
+        
+            In this case, we know that the function will return either a tuple of 2 or a tuple of 3. 
+            But it is up to the subclass method to define what tuple it will return. 
+        
+        # Do I need to do this with all my classes?
+            Absolutely not. But we want to show you some things you will see often when reading python code
+            and give an explanation for why certain practices exist in the language. 
+
         """
         return self.__get_record__(f_obj)
 
