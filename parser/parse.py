@@ -96,7 +96,6 @@ class Parser:
             # and implement an exception for the error you will find in
             # the error message you receive. 
             while True:
-
                 rec = self.get_record(f_obj)
                 yield rec
 
@@ -109,6 +108,7 @@ class Parser:
                 This function is not meant to be called by the Parser Class.
                 It is expected to be overridden by `FastaParser` and `FastqParser`""")
 
+
 class FastaParser(Parser):
     """
     Fasta Specific Parsing
@@ -117,6 +117,7 @@ class FastaParser(Parser):
         """
         returns the next fasta record
         """
+
 
 class FastqParser(Parser):
     """
