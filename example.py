@@ -8,7 +8,22 @@ def main():
     """
     The main function
     """
-    pass
+    
+    # Create instance of FastaParser
+    # Create instance of FastqParser
+        
+    # For each record of FastaParser, Transcribe the sequence
+    # and print it to console
+       
+    # For each record of FastqParser, Transcribe the sequence
+    # and print it to console
+
+
+    # For each record of FastaParser, Reverse Transcribe the sequence
+    # and print it to console
+       
+    # For each record of FastqParser, Reverse Transcribe the sequence
+    # and print it to console
 
 
 """
