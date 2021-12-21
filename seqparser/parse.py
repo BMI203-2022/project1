@@ -18,7 +18,7 @@ class Parser:
            
         # Should I ever call the `__init__` method? 
             Like most hidden methods (the double underscored names) this is not generally something
-            you call from the outside of a class. However, if you need to specificy a different
+            you call from the outside of a class. However, if you need to specify a different
             `__init__` method for a subclass you will need to call this with the `Super` keyword. We
             won't get into this now, but if you are interested feel free to reach out to the TAs or
             check out the documentation on the `Super` keyword. 
