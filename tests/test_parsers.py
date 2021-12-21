@@ -21,7 +21,7 @@ def test_freebie_parser_2():
     assert 1 != 2
 
         
-def FastaParser_unit_test():
+def test_FastaParser():
     """
     Write your unit test for your FastaParser
     class here. You should generate an instance of
@@ -30,7 +30,8 @@ def FastaParser_unit_test():
     """
     pass
 
-def FastqParser_unit_test():
+
+def test_FastqParser():
     """
     Write your unit test for your FastqParser
     class here. You should generate an instance of
