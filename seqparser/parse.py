@@ -43,7 +43,7 @@ class Parser:
             and give an explanation for why certain practices exist in the language. 
 
         """
-        return self.__get_record__(f_obj)
+        return self._get_record(f_obj)
 
     def __iter__(self):
         """
@@ -99,7 +99,7 @@ class Parser:
                 rec = self.get_record(f_obj)
                 yield rec
 
-    def __get_record__(self, f_obj: io.TextIOWrapper) -> Union[Tuple[str, str], Tuple[str, str, str]]:
+    def _get_record(self, f_obj: io.TextIOWrapper) -> Union[Tuple[str, str], Tuple[str, str, str]]:
         """
         a method to be overridden by inherited classes.
         """
@@ -113,7 +113,7 @@ class FastaParser(Parser):
     """
     Fasta Specific Parsing
     """
-    def __get_record__(self, f_obj: io.TextIOWrapper) -> Tuple[str, str]:
+    def _get_record(self, f_obj: io.TextIOWrapper) -> Tuple[str, str]:
         """
         returns the next fasta record
         """
@@ -123,7 +123,7 @@ class FastqParser(Parser):
     """
     Fastq Specific Parsing
     """
-    def __get_record__(self, f_obj: io.TextIOWrapper) -> Tuple[str, str, str]:
+    def _get_record(self, f_obj: io.TextIOWrapper) -> Tuple[str, str, str]:
         """
         returns the next fastq record
         """
