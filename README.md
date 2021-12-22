@@ -34,13 +34,36 @@ The learning goals of this project are:
 
 	See blogposts below on helping set up github actions with pytest:
 	
-	[post 1](https://blog.dennisokeeffe.com/blog/2021-08-08-pytest-with-github-actions)
-	
-	[post 2](https://mattsegal.dev/pytest-on-github-actions.html)
+	* [post 1](https://blog.dennisokeeffe.com/blog/2021-08-08-pytest-with-github-actions)
+	* [post 2](https://mattsegal.dev/pytest-on-github-actions.html)
 
-	Ensure that the github actions:
+	Ensure that the github actions complete the following:
 	* pip installs tool
 	* runs pytest
+
+# Getting Started
+To get started you will need to fork this repository onto your own github. You will then work on the code base from your own repo and make changes to it in the form of commits. 
+
+## Git Basics
+
+### Overview
+Git is a version control tool originally built to keep track of the linux kernel. We will expect you to become familiar with it mainly up to the point of forking, adding, committing, and pushing. There are more things you can do with it, but we will leave that up to you to learn if you are interested. 
+
+### Forking
+Forking is a means of copying the existing code base to another "branch" which you can then work on. This leaves the original upstream branch unchanged. This is useful when you are modifying an existing code base for an extra purpose which goes beyond the scope of the original authors. It is also the de facto way to contribute to open source repositories (by forking the existing repo, making your changes, and then merging back into the upstream branch via a pull request). We will not go over pull requests here, but there are plenty of resources online about them if you are interested. 
+
+### General Pipeline
+The general overview of git actions is as follows. 
+```bash
+# staging changed files 
+git add changed_file.txt changed_file_2.txt
+
+# commiting changed files
+git commit -m "this is a message describing my changes"
+
+# pushing to the repository (upstream branch)
+git push
+```
 
 # Reference Information
 ## Test Data
