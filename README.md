@@ -118,21 +118,25 @@ GATAAACTTCTATCACGAATACTGCGGGACCATGCAGTT
 ```
 
 ## Transcription
-### Regular Transcription
-Despite the hamming distance of their names, DNA and RNA are completely different molecules. While practices handling these materials in the wetlab are incredible different, the largest difference between them in the drylab is the replacement of the thymine: `T` for a uracil: `U`. 
 
-```
-input  : ACTGAACCC
-output : ACUGAACCC
-```
-
-### Reverse-Transcription
-This process is very similar to the transcription process except that the reverse transcription process is mimicing the reverse strand of the nucleic acid. However, to a computer scientist, this process can be thought of as the nesting of functions: `reverse(transcribe(sequence))` 
+### Transcription 
+This process is returning the complement strand to the provided sequence. You can think of this as a mapping of complement bases, except that the `T`s are replaced with `U`s
 
 ```
 input  : A C T G A A C C C
          | | | | | | | | |
-output : U G U C U U G G G
+output : U G A C U U G G G
+```
+
+### Reverse - Transcription
+This process is used to return the reverse of the complement strand. It is equivalent to a `reverse(transcribe(seq))`
+
+```
+input       : A C T G A A C C C
+              | | | | | | | | |
+transcribe  : U G A C U U G G G 
+
+output : G G G U U C A G U
 ```
 
 # Github Actions
